@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Outfit&family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    min-height: 100vh;
+    place-items: center;
+    background-color: hsl(233, 47%, 7%);
+}
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+    border-radius: 1rem;
+    background-color: hsl(244, 38%, 16%);
+}
+
+img {
+    opacity: 0.7;
+    mix-blend-mode: multiply;
+}
+.card1 {
+    display: grid;
+    padding: 4rem;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card2 {
+    background: hsl(277, 64%, 61%);
+    overflow: hidden;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+.child {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1, h2 {
+    color: hsl(0, 0%, 100%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.child p {
+    color: hsla(0, 0%, 100%, 0.6)
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+@media (width <= 600px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+        max-width: 100%;
+    }
+    .child {
+        display: block;
+        text-align: center;
+        padding: 1rem
+    }
+
+    .card2 {
+        display: grid;
+        grid-column: 1/2;
+        border-top-right-radius: 1rem;
+        border-top-left-radius: 1rem;
+        border-bottom-right-radius: 0;
+    }
+    .id {
+        margin: 20px;
+    }
+    
+}
